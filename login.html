@@ -3,36 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sudoku Game</title>
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Firebase Libraries -->
+    <title>Sudoku Login</title>
+    <link rel="stylesheet" href="login.css">
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
-
-    <!-- Main Script -->
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="main-page">
-        <h1>Sudoku</h1>
-        <button id="start-new-game">Start New Game</button>
-        <button id="continue-game">Continue Game</button>
+    <div id="login-container">
+        <h1>Login to Sudoku</h1>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <button type="submit">Login</button>
+        </form>
     </div>
 
-    <!-- Game Page -->
-    <div id="game-page" style="display: none;">
-        <h1>Sudoku</h1>
-        <div id="welcome-user">Welcome, Player</div>
-        <div id="difficulty">Difficulty: Unknown</div>
-        <div id="errors">Errors: 0</div>
-        <div id="timer">0:00</div>
-        <div id="user-streak">Current Streak: 0</div>
-        <button id="toggle-note" style="display: none;">Note Mode</button>
-        <div id="board"></div>
-        <div id="digits"></div>
-        <button id="back-to-main">Back to Main Menu</button>
-    </div>
+    <!-- Firebase Libraries -->
+    <script src="login.js" defer></script>
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
