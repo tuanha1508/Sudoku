@@ -17,9 +17,6 @@ h1 {
 }
 
 /* Sudoku Board Styling */
-/* Sudoku Board Styling */
-/* Sudoku Board Styling */
-/* Sudoku Board Styling */
 #board {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
@@ -27,7 +24,7 @@ h1 {
     width: 450px;
     height: 450px;
     margin: 20px auto;
-    border: 3px solid black; /* Outer border */
+    border: 3px solid black;
     background: white;
     box-sizing: border-box;
 }
@@ -78,9 +75,6 @@ h1 {
     border-bottom: 3px solid black; /* Bold horizontal lines between rows of sub-grids */
 }
 
-
-
-
 /* Adjust Tile Content */
 .title[data-notes] {
     font-size: 12px; /* Smaller font for notes */
@@ -129,7 +123,6 @@ h1 {
 }
 
 /* Buttons */
-/* Center the button container */
 button {
     display: inline-block;
     margin: 10px auto;

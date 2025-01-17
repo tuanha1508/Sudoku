@@ -1,4 +1,3 @@
-// Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBg6UuZhZqKiiKf4bmcnpjkibkdzD8StCk",
     authDomain: "sudoku-c4425.firebaseapp.com",
@@ -10,7 +9,6 @@ const firebaseConfig = {
     measurementId: "G-PYQTRJ8BED",
 };
 
-// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
 document.getElementById("login-form").addEventListener("submit", function (e) {
@@ -18,8 +16,8 @@ document.getElementById("login-form").addEventListener("submit", function (e) {
     const username = document.getElementById("username").value;
 
     if (username) {
-        localStorage.setItem("sudokuUsername", username); // Save username locally
-        window.location.href = "index.html"; // Redirect to main page
+        localStorage.setItem("sudokuUsername", username); 
+        window.location.href = "index.html"; 
     } else {
         alert("Please enter a valid username.");
     }
